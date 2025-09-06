@@ -1,0 +1,37 @@
+---
+
+---
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Chat — Buscador Opciones | SC PROSOFT SAS</title>
+    <link rel="stylesheet" href="/src/styles/global.css" />
+  </head>
+  <body class="min-h-screen bg-white text-gray-900">
+    <main class="max-w-4xl mx-auto p-6">
+      <header class="flex items-center justify-between mb-6">
+        <div>
+          <h1 class="text-2xl font-semibold">Chat - Buscador Opciones</h1>
+        </div>
+      </header>
+
+      <section class="bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm">
+        <div id="messages" class="h-[60vh] md:h-[70vh] overflow-y-auto p-6 space-y-4 bg-gradient-to-b from-white to-gray-50">
+          <!-- Mensajes se renderizan aquí -->
+        </div>
+
+        <form id="chat-form" class="border-t border-gray-100 p-4 flex gap-3 items-end">
+          <textarea id="chat-input" rows="1" placeholder="Escribe un mensaje... (Shift+Enter para salto de línea)" class="flex-1 resize-none rounded-md bg-gray-50 border border-gray-200 p-3 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-400"></textarea>
+          <button id="send-btn" type="submit" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-md flex items-center gap-2">Enviar</button>
+        </form>
+      </section>
+
+      <footer class="mt-4 text-xs text-gray-500"></footer>
+    </main>
+
+    <script type="module" src="/src/scripts/chat.js"></script>
+  </body>
+</html>
